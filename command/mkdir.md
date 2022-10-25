@@ -44,4 +44,29 @@ mkdir -m 700 /usr/meng/test
 mkdir -p-m 750 bin/os_1
 ```
 
+创建多级目录；如果没有参数-p，则无法创建此类型多级目录
+
+```shell
+mkdir -p a/b/c
+```
+
+和上面一个指令效果完全不一样，本指令创建的文件夹a在根目下；也即创建在二级目录下，该操作一般是不允许的
+
+```shell
+mkdir -p /a/b/c
+```
+
+在shiren目录下，创建了三个文件夹，分别是libai、baijuyi和dufu
+
+```shell
+    mkdir -p shiren/{libai,baijuyi,dufu}
+```
+
+该指令和上述指令完全不同，是在当前目录下建立了shirenlibai、shirenbaijuyi和shirendufu
+
+```shell
+    mkdir -p shiren{libai,baijuyi,dufu}
+```
+
+
 
